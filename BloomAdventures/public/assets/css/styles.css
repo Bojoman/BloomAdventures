@@ -1,0 +1,312 @@
+*{
+ padding: 0;
+ margin: 0;
+ border: none;
+ outline: none;
+}
+
+
+
+body{
+ margin: 0;
+}
+
+
+
+
+
+
+.align-title {
+ text-align: center;
+ margin-bottom: 50px;
+}
+.align-title h5 {
+ font-family: 'Source Serif Pro';
+ font-weight: 1000;
+ font-size: 18px;
+ line-height: 30px;
+ text-align: center;
+ color: #FE7524;
+ margin-bottom: 10px;
+}
+.align-title h3 {
+ font-family: 'Source Serif Pro';
+ font-weight: 600;
+ font-size: 36px;
+ line-height: 46px;
+ text-align: center;
+ color: #094174;
+}
+/* category */
+.category{
+ padding-top: 140px;
+ padding-bottom: 70px;
+ position: relative;
+}
+.sail-image{
+ position: absolute;
+ top: 50px;
+ left: 20%;
+ animation: blog 2s linear infinite alternate;
+    /* max-width: 100%;
+    width: 100%;
+    height: 100%;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all; */
+}
+.sail-image {
+  animation-name: sailAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes sailAnimation {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.row .col-xl-2,
+.row .col-lg-4,
+.row .col-md-6 {
+  margin-bottom: 50px; /* Add desired space between the divs */
+}
+
+.row .col-xl-2:last-child,
+.row .col-lg-4:last-child,
+.row .col-md-6:last-child {
+  margin-bottom: 0; /* Remove margin on the last col div */
+}
+
+.category-content{
+ position: relative;
+ width: 176px;
+ height: 196px;
+ border-radius: 60%;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: #F7F8FA;
+ transition: 0.3s;
+}
+.category-content-inner {
+ transition: 0.3s;
+}
+.category-image-container{
+ width: 104px;
+ height: 104px;
+ line-height: 104px;
+ margin: 0 auto;
+ border-radius: 50%;
+ background: #ffffff;
+ border: 1px solid #F7F7F7;
+ box-shadow: 0px 4px 15px rgba(205, 205, 205, 0.05);
+ margin-bottom: 10px;
+
+}
+/* .category-image{
+ width: 63px;
+ height: 45px;
+ margin: 0 auto;
+} */
+.category-content h5{
+ font-weight: 600;
+ font-size: 18px;
+ color: #094174;
+ margin: 5px 0;
+}
+.category-btn{
+ position: absolute;
+ bottom: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+ display: block;
+ width: 25px;
+ height: 20px;
+ line-height: 27px;
+ text-align: center;
+ border-radius: 50%;
+ background: #094174;
+ color: #ffffff;
+ opacity: 0;
+ visibility: hidden;
+ transition: 0.3s;
+}
+.category-btn:hover{
+ color: #FE7524;
+}
+.category-content:hover .category-btn{
+ opacity: 1;
+ visibility: visible;
+}
+.category-content:hover .category-content-inner{
+ margin-top: -60px;
+}
+
+.offers {
+ font-family: 'Source Serif Pro';
+ font-weight: 600;
+ font-size: 36px;
+ line-height: 46px;
+ color: #094174;
+}
+.destinations .container .offers-icon{
+   position: absolute;
+   left: 450px;
+}
+.swiper-slide img{
+ width: 250px;
+ height: 250px;
+ object-fit: cover;
+}
+.swiper-heading h4{
+ color:rgb(210, 180, 11);
+ margin-left: 20px;
+}
+.destination-details img{
+ width: 70px;
+ height: auto;
+}
+.destination-details ul{
+ list-style: none;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ align-content: space-around;
+  flex-wrap: nowrap;
+}
+.destination-details h4{
+ color: #0d6efd;
+}
+.destination-details ul li span {
+ display: inline-block;
+ color: #FE7524;
+ font-size: 24px;
+ font-weight: 700;
+}
+.destination-details-link {
+ display: inline-block;
+ font-family: 'Source Serif Pro';
+ font-weight: 600;
+ font-size: 32px;
+ line-height: 42px;
+ color: #094174;
+ margin: 10px 0;
+ transition: 0.3s;
+}
+.destination-details-link:hover{
+ color:#FE7524;
+}
+.plane img{
+  display: inline-block;
+    max-width: 100%;
+    width: 70%;
+    height: 70%;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    transition-property: all;
+    margin-top: 20px;
+}
+.plane img {
+  animation-name: rotateAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.destination-details p img{
+  width: 20px;
+  height: 25px;
+}
+.destination-details p{
+  padding-left: 20px;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 5px;
+}
+.sail-png img{
+  display: inline-block;
+    max-width: 100%;
+    width: 70%;
+    height: 70%;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    transition-property: all;
+    margin-top: 10px;
+}
+.sail-png img {
+  animation-name: sailingAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes sailingAnimation {
+  0% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.advertisement{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.gallery{
+  padding-top: 80px;
+}
+  /* .testimonials{
+    margin-top: 100px;
+    background-image: url('../img/background.2.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+.testimonials{
+  display: flex;
+  align-items: start;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.flex-shrink-0 img{
+  width: 100px;
+  height: auto;
+  border-radius: circle;
+  
+}
+.mb-5 .navbar-brand-logo{
+  width: max-content;
+  height: max-content;
+}
